@@ -93,4 +93,37 @@
       <li>Belarussian Level: C2 (Native Speaker)</li>
     </ul>
   </section>
+  <section class="code-examples">
+    <h2>Solved CodeWars katas (Code examples)</h2>
+    <ul>
+      <li>
+        <pre><code>function repeatStr(n, s) {
+  return s.repeat(n);
+}</code></pre>
+      </li>
+      <li>
+        <pre><code>function keepOrder(ary, val) {
+  let index = 0;
+  while (index < ary.length && ary[index] < val) {
+    index++;
+  }
+  return index;
+}</code></pre>
+      </li>
+      <li>
+        <pre><code>function digPow(n, p) {
+  let digits = n.toString().split('');
+  let sum = 0;
+  for (let i = 0; i &lt; digits.length; i++) {
+    sum += Math.pow(parseInt(digits[i]), p + i);
+  }
+  let k = sum / n;
+  return Number.isInteger(k) ? k : -1;
+}</code></pre>
+      </li>
+    </ul>
+  </section>
 
+</body>
+
+</html>
